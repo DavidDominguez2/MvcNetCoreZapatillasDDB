@@ -1,0 +1,93 @@
+CREATE TABLE ZAPASPRACTICA
+(IDPRODUCTO INT NOT NULL PRIMARY KEY,
+NOMBRE NVARCHAR(100),
+DESCRIPCION NVARCHAR(1200),
+PRECIO INT)
+GO
+CREATE TABLE IMAGENESZAPASPRACTICA
+(IDIMAGEN INT NOT NULL PRIMARY KEY,
+IDPRODUCTO INT,
+IMAGEN NVARCHAR(1500))
+GO
+INSERT INTO ZAPASPRACTICA VALUES (9, 'Air Jordan 6 Retro', 'Estilo impecable. Mantente fresco. Las AJ6 "Cool Grey" llevan tu estilo más lejos con una combinación de colores que se inspira en el ADN de la marca Jordan. MJ las llevaba cuando ganó su primer campeonato, y tú podrás llevarlas con otras prendas en cualquier ocasión', 209)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(1, 9, 'https://static.nike.com/a/images/t_PDP_1728_v1/af407608-9bbd-4140-8f5a-e1a24284574d/air-jordan-6-retro-zapatillas-5g9Mhp.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(2, 9, 'https://static.nike.com/a/images/t_PDP_1728_v1/f1872a38-b733-4c8e-bf7e-3f2748b0fefa/air-jordan-6-retro-zapatillas-5g9Mhp.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(389, 9, 'https://static.nike.com/a/images/t_PDP_1728_v1/88916ece-6304-481a-8ae1-a845fb251cb7/air-jordan-6-retro-zapatillas-5g9Mhp.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(454, 9, 'https://static.nike.com/a/images/t_PDP_1728_v1/e78b96cd-de93-406e-aab1-efbb1839ce23/air-jordan-6-retro-zapatillas-5g9Mhp.png')
+--------------------------------
+INSERT INTO ZAPASPRACTICA VALUES (2, 'Air Jordan 1 Low', 'Inspiradas en las originales que debutaron en 1985, las Air Jordan 1 Low ofrecen un look clásico e impecable que resulta familiar pero aporta frescura. Con un diseño icónico que combina a la perfección con cualquier ajuste, estas zapatillas son ideales para tomar las riendas.', 120)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(5, 2, 'https://static.nike.com/a/images/t_PDP_1728_v1/0f72dde6-ed46-4e8b-8e54-90a0fefee6ec/air-jordan-1-low-zapatillas-VqkZHL.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(6, 2, 'https://static.nike.com/a/images/t_PDP_1728_v1/c6b1f45c-85b1-4db5-87ec-17b1df8985e9/air-jordan-1-low-zapatillas-VqkZHL.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(77, 2, 'https://static.nike.com/a/images/t_PDP_1728_v1/e766f3a6-dcbb-4655-9ce0-52a2dcad2f2a/air-jordan-1-low-zapatillas-VqkZHL.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(78, 2, 'https://static.nike.com/a/images/t_PDP_1728_v1/61cff2b5-8acc-4508-8f9f-f9c8d4725f46/air-jordan-1-low-zapatillas-VqkZHL.png')
+--------------------------------
+INSERT INTO ZAPASPRACTICA VALUES (3, 'Nike Dunk Low By You', 'Lleva tu juego a cualquier lugar con las Nike Dunk Low By You. El icono del baloncesto de los 80, creado para la cancha y adaptado al estilo urbano, vuelve con un nuevo diseño solo para ti. Elige una suela exterior Nike Grind, de goma o estándar. Elige tus colores favoritos. Para acabar, incluye una inscripción personalizable en la parte posterior.', 130)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(91, 3, 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1f957f5f-9038-4984-ab1c-235f8df618a6/custom-nike-dunk-low-by-you.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(121, 3, 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/98bfa6e4-e30b-4de1-b1a6-46d9a9fd0779/custom-nike-dunk-low-by-you.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(11, 3, 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/31cbc09b-cfc1-481e-a091-92e27ad549a6/custom-nike-dunk-low-by-you.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(174, 3, 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9af35e28-6e48-4f32-9d28-4f19779b0862/custom-nike-dunk-low-by-you.png')
+INSERT INTO ZAPASPRACTICA VALUES (5, 'Adidas Flow', 'Estilo retro Verde molón', 110)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(24, 5, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d543e63cca0e4497b382af8e00a2d231_9366/Zapatilla_Forum_Low_Verde_IE4585_01_standard.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(99, 5, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a26f245b71824c0a9ffdaf8e00a2e244_9366/Zapatilla_Forum_Low_Verde_IE4585_02_standard_hover.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(103, 5, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4ae2fbfb42df4bd7909aaf8e00a2e9fc_9366/Zapatilla_Forum_Low_Verde_IE4585_03_standard.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(14, 5, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c1bc22a456f4a77856caf8e00a2f1ae_9366/Zapatilla_Forum_Low_Verde_IE4585_04_standard.jpg')
+--------------------------------
+INSERT INTO ZAPASPRACTICA VALUES (6, 'Adidas Stan Smith', 'Unas zapatillas sin época', 90)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(34, 6, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d2a4755c8839473e9e56af5b00e4d7ca_9366/Zapatilla_Stan_Smith_Blanco_HQ6816_01_standard.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(199, 6, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/755dde304e504f05ac82af5b00e4f282_9366/Zapatilla_Stan_Smith_Blanco_HQ6816_02_standard_hover.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(203, 6, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1b2f25e1ab154016b439af5b00e4ff85_9366/Zapatilla_Stan_Smith_Blanco_HQ6816_03_standard.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(114, 6, 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e02f96b121514b36bf2caf5b00e50cd4_9366/Zapatilla_Stan_Smith_Blanco_HQ6816_04_standard.jpg')
+--------------------------------
+INSERT INTO ZAPASPRACTICA VALUES (7, 'Nike Air Max 90 LTR', 'Las Nike Air Max 90 LTR se mantienen fieles a sus raíces de running originales con la icónica suela exterior tipo gofre, revestimientos cosidos de piel suave y las clásicas placas de TPU con detalles de color. La parte superior monocromática proporciona opciones de estilo versátiles, y la amortiguación Max Air añade comodidad a cada pisada', 157)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(44, 7, 'https://static.nike.com/a/images/t_PDP_1728_v1/7b6ccd0a-2e86-4fac-8f13-a0d11c5f90df/air-max-90-ltr-zapatillas-4qFl8H.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(499, 7, 'https://static.nike.com/a/images/t_PDP_1728_v1/ee9485dd-0242-4b8c-b0de-d5676a21bf7e/air-max-90-ltr-zapatillas-4qFl8H.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(403, 7, 'https://static.nike.com/a/images/t_PDP_1728_v1/be9b8098-d4f2-4b1a-ab0a-706de9211e91/air-max-90-ltr-zapatillas-4qFl8H.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(414, 7, 'https://static.nike.com/a/images/t_PDP_1728_v1/d7c9d503-b2bc-4601-9e4e-b37a63de1c76/air-max-90-ltr-zapatillas-4qFl8H.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(13, 7, 'https://static.nike.com/a/images/t_PDP_1728_v1/a7da76a3-9192-4081-986e-fcee9aa6f89e/air-max-90-ltr-zapatillas-4qFl8H.png')
+INSERT INTO ZAPASPRACTICA VALUES (8, 'Nike Waffle Trainer 2', 'Las Nike Waffle Trainer 2 se mantienen fieles al estilo deportivo atemporal que más te gusta con el look clásico de Nike Running tradicional. Gracias a su icónica suela exterior tipo gofre, al logotipo Swoosh retro de gran tamaño y a los detalles de ante reflectantes, es una versión vintage. La mediasuela de espuma suave con cuña de espuma extrasuave es tan cómoda que debería estar prohibida, y la lengüeta de espuma expuesta añade la cantidad perfecta de reflectante', 75)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(35, 8, 'https://static.nike.com/a/images/t_PDP_1728_v1/8f2004cc-356c-4a4f-92b6-7cc70dee28a9/waffle-trainer-2-zapatillas-DGPN55.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(197, 8, 'https://static.nike.com/a/images/t_PDP_1728_v1/26fcb707-ed40-463f-b04c-90d15be245ae/waffle-trainer-2-zapatillas-DGPN55.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(205, 8, 'https://static.nike.com/a/images/t_PDP_1728_v1/b012cb4c-f710-427f-afac-e04710ec736f/waffle-trainer-2-zapatillas-DGPN55.png')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(119, 8, 'https://static.nike.com/a/images/t_PDP_1728_v1/3178ffb0-7cf4-4f9e-aa8a-f3bb1e92908c/waffle-trainer-2-zapatillas-DGPN55.png')
+--------------------------------
+INSERT INTO ZAPASPRACTICA VALUES (1, 'Nike Air Mag', 'Las Nike Waffle Trainer 2 se mantienen fieles al estilo deportivo atemporal que más te gusta con el look clásico de Nike Running tradicional. Gracias a su icónica suela exterior tipo gofre, al logotipo Swoosh retro de gran tamaño y a los detalles de ante reflectantes, es una versión vintage. La mediasuela de espuma suave con cuña de espuma extrasuave es tan cómoda que debería estar prohibida, y la lengüeta de espuma expuesta añade la cantidad perfecta de reflectante', 75)
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(444, 1, 'https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/03/16462974829783.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(888, 1, 'https://sothebys-md.brightspotcdn.com/dims4/default/aea356e/2147483647/strip/true/crop/2000x2000+0+0/resize/2048x2048!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fb9%2Fa7%2F8dd882a3460995b740f37bbb44a0%2F728sneakers-c672h-03.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(999, 1, 'https://i.blogs.es/8c61bc/nikeairmag/1366_2000.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(756, 1, 'https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2016/10/10/14760914902283.jpg')
+INSERT INTO IMAGENESZAPASPRACTICA VALUES 
+(776, 1, 'https://i0.wp.com/hipertextual.com/wp-content/uploads/2011/09/Nike-BTF31.jpg')
+--------------------------------

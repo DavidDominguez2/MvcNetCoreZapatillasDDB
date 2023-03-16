@@ -1,0 +1,59 @@
+﻿@model MvcNetCoreZapatillas.Models.Zapatilla
+@section Scripts{
+    <script>
+        function paginacion(posicion, idproducto) {
+            var request = "/Zapatillas/_PaginacionZapatillas?idZapatilla=" + idproducto + "&posicion=" + posicion;
+            $("#contenido").load(request);
+        }
+        $(document).ready(function(){
+        
+           $("#contenido").load("/Zapatillas/_PaginacionZapatillas?idZapatilla=" + @Model.IdProducto + "&posicion=1");
+           
+         
+        })
+    </script>
+}
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Zapatilla</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdProducto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdProducto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+    </dl>
+</div>
+
+
+<div id="contenido"></div>
+
+
+
+
+

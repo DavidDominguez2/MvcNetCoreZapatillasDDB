@@ -1,0 +1,34 @@
+﻿@model PaginacionImagenesZapatilla
+@{
+    int numeroRegistros = 0;
+    int numeropagina = 1;
+    if (Model != null) {
+        numeroRegistros = Model.NumeroRegistros;
+    }
+}
+
+
+<h1>Imagenes</h1>
+
+@if (Model != null) {
+    <nav aria-label="Pagination Employees">
+        <ul class="pagination">
+            @for (int i = 1; i <= numeroRegistros; i += 1) {
+                <li class="page-item">
+                    <button onclick="paginacion(@i, @Model.ImagenesZapatilla[0].IdProducto)">
+                        Página @numeropagina
+                    </button>
+                </li>
+                numeropagina += 1;
+            }
+            
+        </ul>
+    </nav>
+
+
+    @foreach (ImagenZapatilla image in Model.ImagenesZapatilla) {
+        <img src="@image.Imagen" width="300" height="300"/>
+    }
+}
+
+

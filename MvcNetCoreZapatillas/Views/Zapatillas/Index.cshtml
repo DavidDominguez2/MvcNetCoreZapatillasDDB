@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MvcNetCoreZapatillas.Models.Zapatilla>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+
+                <a asp-action="Details" asp-controller="Zapatillas" asp-route-idZapatilla="@item.IdProducto" class="btn btn-success">
+                    Details
+                </a>
+   
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
